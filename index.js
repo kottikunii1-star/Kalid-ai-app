@@ -85,8 +85,5 @@ app.post("/api/chat", async (req, res) => {
     }
 });
 
-// Vercel irratti 'app' qofa export gochuun gahaadha
-module.exports = app;
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log("Hojjechaa jira..."));
+// Export for Vercel
+export default app;
