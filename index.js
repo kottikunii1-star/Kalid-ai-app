@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
             chat.scrollTop = chat.scrollHeight;
 
             try {
-                const res = await fetch("/chat", {
+                const res = await fetch("/api/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ message: userMsg })
@@ -62,7 +62,7 @@ app.get("/", (req, res) => {
     `);
 });
 
-app.post("/chat", async (req, res) => {
+app.post("/api/chat", async (req, res) => {
     try {
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
