@@ -1,7 +1,7 @@
 {
-  "name": "kalid-ai-final",
+  "name": "kalid-ai-app",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
